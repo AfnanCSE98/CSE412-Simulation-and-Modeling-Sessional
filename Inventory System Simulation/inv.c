@@ -53,8 +53,10 @@ int main()  /* Main function. */
             initial_inv_level);
     fprintf(outfile, "Number of demand sizes%25d\n\n", num_values_demand);
     fprintf(outfile, "Distribution function of demand sizes  ");
+
     for (i = 1; i <= num_values_demand; ++i)
         fprintf(outfile, "%8.3f", prob_distrib_demand[i]);
+        
     fprintf(outfile, "\n\nMean interdemand time%26.2f\n\n", mean_interdemand);
     fprintf(outfile, "Delivery lag range%29.2f to%10.2f months\n\n", minlag,
             maxlag);
